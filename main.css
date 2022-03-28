@@ -43,12 +43,7 @@ header .menu li a {
   text-decoration: none;
 }
 
-.slider1 {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-}
-.slider1 .fwh-section1 {
+.slider1 #fwh-section1 {
   height: 100vh;
   border: 2px solid red;
   display: flex;
@@ -56,20 +51,14 @@ header .menu li a {
   align-items: center;
   justify-content: center;
 }
-
-.fwh-section2 {
-  height: 100vh;
-  border: 2px solid blue;
-  background-color: blue;
-}
-.fwh-section2 .controls {
+.slider1 #fwh-section1 #controls {
   position: absolute;
   top: 50%;
   transform: translate(-50%);
   right: 0;
   width: 80px;
 }
-.fwh-section2 .controls .sc2 {
+.slider1 #fwh-section1 #controls #sc2 {
   position: relative;
   width: 80px;
   height: 80px;
@@ -80,10 +69,10 @@ header .menu li a {
   align-items: center;
   cursor: pointer;
 }
-.fwh-section2 .controls :hover {
+.slider1 #fwh-section1 #controls :hover {
   background: #ffeb3b;
 }
-.fwh-section2 .controls :before {
+.slider1 #fwh-section1 #controls :before {
   content: "";
   position: absolute;
   width: 20px;
@@ -92,18 +81,22 @@ header .menu li a {
   border-bottom: 3px solid #111;
   transform: rotate(45deg);
 }
-.fwh-section2 .controls :nth-child(2)::before {
+.slider1 #fwh-section1 #controls :nth-child(2)::before {
   transform: rotate(225deg);
 }
-
-.fwh-section3 {
+.slider1 #fwh-section3 {
   height: 100vh;
   border: 2px solid yellow;
   background-color: yellow;
 }
-
-.fwh-section4 {
+.slider1 #fwh-section4 {
   height: 100vh;
   border: 2px solid green;
   background-color: green;
+}
+
+.slider2 #fwh-section2 {
+  height: 100vh;
+  border: 2px solid blue;
+  background-color: blue;
 }
