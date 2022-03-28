@@ -43,22 +43,53 @@ header .menu li a {
   text-decoration: none;
 }
 
-.slider1 #fwh-section1 {
-  height: 100vh;
-  border: 2px solid red;
+#slider1 #fwh-section1 {
+  border: 2px solid palegreen;
+  background-color: palegreen;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  visibility: visible;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.slider1 #fwh-section1 #controls {
+#slider1 #fwh-section3 {
+  border: 2px solid yellow;
+  background-color: yellow;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#slider1 #fwh-section4 {
+  border: 2px solid green;
+  background-color: green;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#slider1 #controls {
   position: absolute;
   top: 50%;
   transform: translate(-50%);
   right: 0;
   width: 80px;
 }
-.slider1 #fwh-section1 #controls #sc2 {
+#slider1 #controls #sc2 {
   position: relative;
   width: 80px;
   height: 80px;
@@ -69,10 +100,10 @@ header .menu li a {
   align-items: center;
   cursor: pointer;
 }
-.slider1 #fwh-section1 #controls :hover {
+#slider1 #controls :hover {
   background: #ffeb3b;
 }
-.slider1 #fwh-section1 #controls :before {
+#slider1 #controls :before {
   content: "";
   position: absolute;
   width: 20px;
@@ -81,21 +112,14 @@ header .menu li a {
   border-bottom: 3px solid #111;
   transform: rotate(45deg);
 }
-.slider1 #fwh-section1 #controls :nth-child(2)::before {
+#slider1 #controls :nth-child(2)::before {
   transform: rotate(225deg);
 }
-.slider1 #fwh-section3 {
-  height: 100vh;
-  border: 2px solid yellow;
-  background-color: yellow;
-}
-.slider1 #fwh-section4 {
-  height: 100vh;
-  border: 2px solid green;
-  background-color: green;
+#slider1 .active {
+  visibility: hidden;
 }
 
-.slider2 #fwh-section2 {
+#slider2 #fwh-section2 {
   height: 100vh;
   border: 2px solid blue;
   background-color: blue;
